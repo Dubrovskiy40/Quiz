@@ -23,6 +23,7 @@ let score = 0; // итоговый результат викторины
 const correctAnswer = document.getElementById('correct-answer'); // количество правильных ответов
 const numberOfAllQuestions2 = document.getElementById('number-of-all-questions-2'); // количество всех вопросов в модальном окне
 const btnTryAgain = document.getElementById('btn-try-again'); //кнопка "начать викторину заново"
+const btnTryContinue = document.getElementById('btn-try-continue');
 
 const questions = [
     {
@@ -230,6 +231,12 @@ const chooseAnswer = () => { // запиускается, если не выбр
     document.querySelector('.quiz-over-modal-choose').classList.add('active');
     console.log('Необходимо выбрать правильный ответ');
 }
+
+const tryContinue = () => {
+    document.querySelector('.quiz-over-modal-choose').classList.remove('active');
+}
+
+btnTryContinue.addEventListener('click', tryContinue);
 
 const quizOver = () => { // при завершении игры показать модальное окно
     document.querySelector('.quiz-over-modal').classList.add('active');
