@@ -2,7 +2,7 @@ body {
     margin: 0;
     background-color: darkcyan;
     font-family: sans-serif;
-    background: url('./DmQQz8zX0AA-4Qp.jpg') no-repeat;
+    background: url('./fon.jpg') no-repeat;
     background-size: cover;
     max-height: 100vh;
 }
@@ -98,11 +98,13 @@ body {
 }
 
 #answers-tracker div.correct {
-    background-color: green;
+    background-image: url(./happy.png);
+    background-size: cover;
 }
 
 #answers-tracker div.wrong {
-    background-color: red;
+    background-image: url(./sad.png);
+    background-size: cover;
 }
 
 .quiz-over-modal, .quiz-over-modal-choose {
